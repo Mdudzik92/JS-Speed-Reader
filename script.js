@@ -8,4 +8,5 @@ var words = poem.split(" ");
 // Grabbing the HTML tags and setting them in their own variables.
 var mainEl = document.getElementById("main");
 var timerEl = document.getElementById("countdown");
+// Creating a div to set the poem into later.
 var bodyEl = document.createElement("div");
