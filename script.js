@@ -10,3 +10,13 @@ var mainEl = document.getElementById("main");
 var timerEl = document.getElementById("countdown");
 // Creating a div to set the poem into later.
 var bodyEl = document.createElement("div");
+
+// Creating the prepareRead function to set our countdown timer process in.
+function prepareRead() {
+	// Starting off the timer with a 5 second countdown.
+	var secondsLeft = 5;
+	var timerInterval = setInterval(function () {
+		timerEl.textContent = secondsLeft + " seconds remaining";
+		secondsLeft--;
+	});
+}
